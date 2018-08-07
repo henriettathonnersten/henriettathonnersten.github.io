@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events2</title>
+    <script src = "events2.js"></script>
+  </head>
+  <body>
+    <form>
+      Name: <input type="text" id ="name">
+      <input type = "button" onclick = "addName(document.getElementById('name').value)" value = "Add name" /><br>
+    </form>
+    <form>
+      Age: <input type="text" id ="age">
+      <input type = "button" onclick = "addAge(document.getElementById('age').value)" value = "Add age" /><br>
+    </form>
+    <form>
+      Occupation: <input type="text" id="occupation">
+      <input type = "button" onclick = "addOccupation(document.getElementById('occupation').value)" value = "Add occupation" /><br>
+    </form>
+    <p id="output"></p>
+  </body>
+</html>
