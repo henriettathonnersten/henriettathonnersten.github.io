@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Garage</title>
+    <script src = "Garage.js"></script>
+  </head>
+  <body>
+
+    <form>
+      Enter registration number: <input type="text" id ="regNo"><br>
+      Enter brand: <input type="text" id ="brand"><br>
+      Enter number of wheels: <input type="text" id ="wheels"><br>
+      Enter number of faults: <input type="text" id ="faults"><br>
+      <input type = "button" onclick = "createCar(document.getElementById('regNo').value, document.getElementById('brand').value, document.getElementById('wheels').value, document.getElementById('faults').value)" value = "Create new car" /><br>
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <form>
+      Enter registration number: <input type="text" id ="regNo"><br>
+      <input type = "button" onclick = "checkInCar(document.getElementById('regNo').value)" value = "Check in car" /><br>
+      <input type = "button" onclick = "checkOutCar(document.getElementById('regNo').value)" value = "Check out car" /><br>
+      <input type = "button" onclick = "calculateCar(document.getElementById('regNo').value)" value = "Calculate car bill" /><br>
+      <input type = "button" onclick = "displayContent()" value = "Display garage contents" />
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <p id = "output"></p>
+  </body>
+</html>
