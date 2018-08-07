@@ -45,7 +45,7 @@ nav a:hover {
   margin-left: 5%;
   margin-right: 5%;
   font-family: "Times new roman", serif;
-  overflow: scroll;
+  overflow-y: scroll;
   height: 75%;
 }
 
