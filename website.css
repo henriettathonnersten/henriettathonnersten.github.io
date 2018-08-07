@@ -45,8 +45,12 @@ nav a:hover {
   margin-left: 5%;
   margin-right: 5%;
   font-family: "Times new roman", serif;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 75%;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .content h2 {
