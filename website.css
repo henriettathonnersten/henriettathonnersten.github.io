@@ -46,6 +46,7 @@ nav a:hover {
   margin-right: 5%;
   font-family: "Times new roman", serif;
   overflow: scroll;
+  height: 75%;
 }
 
 .content h2 {
