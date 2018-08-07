@@ -1,15 +1,18 @@
 var garage = [];
+var splitCommand = new Array();
 
 function handleCommand(command) {
-  if (command.includes("create"))
-    createCar();
-  else if (command.includes("check in") || command.includes("checkin"))
-    checkInCar();
-  else if (command.includes("check out") || command.includes("check out"))
-    checkOutCar();
-  else if (command.includes("calculate") || command.includes("bill"))
-    calculateCar();
-  else if (command.includes("output"))
+  splitCommand = command.split(" ");
+
+  if (command.includes("create") || command.includes("Create"))
+    createCar(splitCommand[2], splitCommand[3], splitCommand[4], splitCommand[5]);
+  else if (command.includes("check in") || command.includes("Check in"))
+    checkInCar(splitCommand[2]);
+  else if (command.includes("check out") || command.includes("Check out"))
+    checkOutCar(splitCommand[2]);
+  else if (command.includes("calculate") || command.includes("Calculate"))
+    calculateCar(splitCommand[1]);
+  else if (command.includes("display") || command.includes("Display"))
     displayContent();
   else {
     document.getElementById("output").innerHTML = "Command not recognised, please try again."
@@ -42,7 +45,7 @@ function checkOutCar(regNo) {
 function calculateCar(regNo) {
   for (var car in garage) {
     if (garage[car].regNo == regNo) {
-      document.getElementById("output").innerHTML = "Repair the car will cost: £" + garage[car].faults*3.55 + ". ";
+      document.getElementById("output").innerHTML = "Repair the car will cost: &#163;" + garage[car].faults*3.55 + ". ";
     }
   }
 }

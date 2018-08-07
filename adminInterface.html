@@ -5,17 +5,19 @@
     <script src = "adminInterface.js"></script>
   </head>
   <body>
-
+    <p>To add a new car, enter "Create car [reg number] [brand] [number of wheels] [number of faults]".<br>
+    To check in, enter "Check in [reg number]".<br>
+    To check out, enter "Check out [reg number]".<br>
+    To calculate a car's bill, enter "Calculate [reg number]".<br>
+    To display the current contents of the garage, enter "Display garage".</p>
     <form>
       Enter what to do next: <input type="text" id ="command"><br>
-      <input type = "button" onclick = "createCar(document.getElementById('command').value)" value = "Add command" /><br>
+      <input type = "button" onclick = "handleCommand(document.getElementById('command').value)" value = "Add command" /><br>
     </form>
 
     <br>
-    <br>
-    <br>
 
     <p id = "output"></p>
-    
+
   </body>
 </html>

@@ -26,7 +26,7 @@ function checkOutCar(regNo) {
 function calculateCar(regNo) {
   for (var car in garage) {
     if (garage[car].regNo == regNo) {
-      document.getElementById("output").innerHTML = "Repair the car will cost: £" + garage[car].faults*3.55 + ". ";
+      document.getElementById("output").innerHTML = "Repair the car will cost: &#163;" + garage[car].faults*3.55 + ". ";
     }
   }
 }
