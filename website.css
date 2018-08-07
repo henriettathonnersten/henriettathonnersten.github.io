@@ -50,7 +50,7 @@ nav a:hover {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 0px
 }
 
 .content h2 {
