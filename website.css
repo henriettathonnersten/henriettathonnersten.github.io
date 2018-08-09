@@ -73,6 +73,21 @@ nav a:hover {
   font-size: 15px;
 }
 
+.content a:link {
+  color:black;
+  text-decoration: none;
+}
+
+.content a:visited {
+  color:black;
+  font-style: italic;
+}
+
+.content a:hover {
+  color: #bfbfbf;
+  text-decoration: none;
+}
+
 .footer {
   background-color: #efefef;
   bottom: 0;
